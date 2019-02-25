@@ -1,0 +1,16 @@
+{
+  "name": "direbio-radio",
+  "version": "0.0.1",
+  "description": "Crawl DiReBio Radio HTML and generate RSS",
+  "main": "crawler.js",
+  "scripts": {
+    "crawler": "node crawler.js > DiReBio-audio.rss"
+  },
+  "author": "Thomas Kalka",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "crawler": "^1.2.0",
+    "html-entities": "^1.2.1",
+    "rss": "^1.2.2"
+  }
+}
