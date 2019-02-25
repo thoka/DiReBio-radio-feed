@@ -17,6 +17,7 @@ var c = new Crawler({
                 let description = $('div.field.field--name-body.field--type-text-with-summary.field--label-hidden.field__item',data).text()
                 description = entities.encodeNonUTF(description)
                 description = description.split('&#160;').join(' ')
+                description = entities.decode(description)
                 let files = []
                 $('.field__item > .file > a',data).each( (i,link) => {
                 
